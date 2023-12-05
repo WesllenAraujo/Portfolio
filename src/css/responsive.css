@@ -1,0 +1,81 @@
+@media(max-width: 1300px) {
+    .work {
+        width: 50%;
+    }
+    #navigation-menu {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 1100px) {
+    .developer-info {
+        width: 90%;
+    }
+    .experiences-row {
+        row-gap: 2rem;
+    }
+    .work {
+        width: 90%;
+    }
+    .course-column {
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 450px) {
+    header {
+        row-gap: 1rem
+    }
+    #header-title {
+        font-size: 2rem;
+    }
+    #navigation-menu {
+        font-size: 1.2rem;
+        gap: .5rem;
+    }
+    main {
+        padding-top: 8rem;
+    }
+    #slider {
+        padding: .5rem;
+    }
+    #carrer {
+        font-size: 1.5rem;
+    }
+    #developer-image {
+        width: 15rem;
+        height: 15rem;
+    }
+    #second-slide-content {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .developer-description {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .developer-info {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .experiences-row {
+        margin-top: .5rem;
+    }
+    .work {
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .row {
+        gap: 0;
+    }
+    .education-plataform {
+        font-size: 1.5rem;
+    }
+    .course {
+        font-size: 1.1rem;
+    }
+    .course-column {
+        width: 80%;
+    }
+    #fourth-slide-content {
+        margin-left: -2rem;
+    }
+}
