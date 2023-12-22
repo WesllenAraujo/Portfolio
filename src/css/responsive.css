@@ -20,6 +20,11 @@
         margin-left: 1rem;
     }
 }
+@media(max-width: 850px) {
+    main {
+        padding-top: 35%;
+    }
+}
 @media(max-width: 450px) {
     header {
         row-gap: 1rem

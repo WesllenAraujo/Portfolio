@@ -4,7 +4,6 @@ window.addEventListener('wheel', function(e) {
 let menuItemList = document.querySelectorAll(".menu-item");
 menuItemList.forEach((button, i) => {
     button.addEventListener("click", function jumpCarroselPage() {
-        console.log(button + " " + i);
         let slideList = document.querySelectorAll(".slide");
         switch (i) {
             case 0:
