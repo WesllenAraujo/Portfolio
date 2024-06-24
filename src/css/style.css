@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Sen:wght@400..800&display=swap');
+:root {
+    --primary-color: #0A0F1E;
+    --secundary-color: #1F2041;
+    --terciary-color: #3B5782;
+    --quaternary-color: #D9F0F9;
+}
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--secundary-color);
+    color: var(--quaternary-color);
+    font-family: 'Sen', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: 'Lalezar', 'Times New Roman', Times, serif;
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 2.5rem;
+    display: flex;
+    align-self: flex-end;
+}
+#navigation-section {
+    font-size: 1.5rem;
+}
+.navigation-item {
+    margin-right: 2rem;
+    transition: .5s ease-in-out;
+}
+.navigation-item:hover {
+    color: var(--terciary-color);
+}
+#language-section {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    right: 10px;
+    top: 40px;
+}
+.language-button {
+    width: 2rem;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+#content {
+    padding: 6rem;
+}
+#introdution {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#introdution-text {
+    width: 44%;
+}
+#introdution-title {
+    width: 90%;
+    font-size: 4rem;
+    font-weight: 800;
+}
+#introdution-role {
+    color: #d9f0f9a4;
+    font-size: 2rem;
+    margin: .5rem 0 1rem 8rem;
+    font-weight: 700;
+}
+.anchor-button {
+    border: 3px solid var(--terciary-color);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+}
+.anchor-button:hover {
+    background-color: #3B5782;
+}
+.introdution-button {
+    width: 50%;
+}
+.anchor-button-fill {
+    background-color: var(--terciary-color);
+    transition: .5s ease-in-out;
+}
+.anchor-button-fill:hover {
+    background-color: #00000000;
+}
+.buttons-group {
+    display: flex;
+    gap: 5%;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 4rem 0;
+}
+.description {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 2rem;
+}
+.main-description {
+    margin-left: 0;
+}
+.skill-group-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.skill-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.skill-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-group {
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+.skill-card {
+    width: 10rem;
+    height: 12rem;
+    padding: .5rem;
+    border: 3px solid var(--quaternary-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.soft-skills .skill-card {
+    width: 12rem;
+}
+.skill-name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.skill-art {
+    width: 6.5rem;
+}
+.experience {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-end;
+}
+.experience:last-child {
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+}
+.experience-text {
+    width: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.experience-image {
+    width: 40%;
+}
+.experience-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.experience-buttons-group {
+    display: flex;
+    height: 100%;
+    gap: 10%;
+}
+.experience-buttons-group .anchor-button {
+    display: flex;
+    height: 3rem;
+    padding: 0 1rem;
+}
+#contact-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+#alternative-contact {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.form-text {
+    background-color: var(--terciary-color);
+    color: var(--quaternary-color);
+    padding: .5rem;
+    border-radius: 10px;
+}
+.form-text::placeholder {
+    color: var(--quaternary-color);
+}
+#form-message {
+    height: 12rem;
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 270px;
+}
+#contact-button {
+    width: 50%;
+    align-self: center;
+    background-color: #00000000;
+}
+#contact-button:hover {
+    background-color: var(--terciary-color);
+}
+#alternative-contact-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#alternative-contact-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-icon {
+    width: 4rem;
+}
+footer {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    text-align: center;
+}
