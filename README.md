@@ -1,5 +1,6 @@
-
-<img src="https://github.com/WesllenAraujo/Portfolio/blob/main/src/images/wesllen-art.png">
+<div align="center">
+  <img src="https://github.com/WesllenAraujo/Portfolio/blob/main/src/images/wesllen-art.png">
+</div>
 
 # Portfólio
 
