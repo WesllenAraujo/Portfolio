@@ -5,10 +5,6 @@
 
 Esse é o meu portfólio, onde você pode me conhecer meu trabalho melhor.
 
-## Demonstração
-
-Entre no website clicando <a href="https://wesllenaraujo.github.io/Portfolio/">aqui</a>.
-
 ## Rodando localmente
 
 Clone o projeto
