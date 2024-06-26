@@ -151,6 +151,10 @@ header h1 {
     align-items: center;
     justify-content: center;
     row-gap: 1rem;
+    transition: 0.5s ease-in-out;
+}
+.skill-card:hover {
+    scale: 1.2;
 }
 .soft-skills .skill-card {
     width: 12rem;
@@ -205,6 +209,10 @@ header h1 {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+}
+#error-message {
+    color: #dc0909;
+    overflow-wrap: break-word;
 }
 #alternative-contact {
     width: 40%;

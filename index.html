@@ -129,13 +129,14 @@
         <section id="contact">
             <h3 class="section-title">Contato</h3>
             <div id="contact-group">
-                <form action="" id="contact-form">
+                <form action="" method="post" id="contact-form">
                     <label for="form-username" class="contact-label">Nome:</label>
                     <input type="text" name="username" id="form-username" placeholder="Insira seu nome" class="form-text" required>
                     <label for="form-useremail" class="contact-label">Email:</label>
                     <input type="email" name="email" id="form-useremail" placeholder="Insira seu email" class="form-text" required>
                     <label for="form-message" class="contact-label">Mensagem:</label>
-                    <textarea name="message" id="form-message" placeholder="Insira sua mensagem" class="form-text" required></textarea>
+                    <textarea name="user-message" id="form-message" placeholder="Insira sua mensagem" class="form-text" required></textarea>
+                    <span id="error-message"></span>
                     <input type="submit" value="Enviar mensagem" class="anchor-button" id="contact-button">
                 </form>
                 <div id="alternative-contact">
