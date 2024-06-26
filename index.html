@@ -8,10 +8,16 @@
     <meta name="theme-color" content="#0A0F1E">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("kw0sTUsWfUHXV3UKs");
+        })();
+     </script>
 </head>
 <body id="pt-br">
     <header id="header-section">
-        <h1>Portfólio</h1>
+        <a href="./index.html"><h1>Portfólio</h1></a>
         <div id="menus-group">
             <nav id="navigation-section">
                 <a href="#about-me" class="navigation-item">Sobre mim</a>
@@ -31,8 +37,8 @@
                 <h2 id="introdution-title">Olá! Eu sou Wesllen Araújo.</h2>
                 <h3 id="introdution-role">Programador web Front-End.</h3>
                 <div class="buttons-group">
-                    <button class="anchor-button anchor-button-fill introdution-button">Download currículo</button>
-                    <a href="" class="anchor-button introdution-button">LinkedIn</a>
+                    <button class="anchor-button anchor-button-fill introdution-button"><a href="./src/files/Curriculum.pdf" download="Curriculum.pdf">Download currículo</a></button>
+                    <a href="https://www.linkedin.com/in/wesllen-ara%C3%BAjo-66327930a/" target="_blank" class="anchor-button introdution-button">LinkedIn</a>
                 </div>
             </div>
             <div class="introdution-art">
@@ -129,22 +135,22 @@
         <section id="contact">
             <h3 class="section-title">Contato</h3>
             <div id="contact-group">
-                <form action="" method="post" id="contact-form">
-                    <label for="form-username" class="contact-label">Nome:</label>
-                    <input type="text" name="username" id="form-username" placeholder="Insira seu nome" class="form-text" required>
-                    <label for="form-useremail" class="contact-label">Email:</label>
-                    <input type="email" name="email" id="form-useremail" placeholder="Insira seu email" class="form-text" required>
-                    <label for="form-message" class="contact-label">Mensagem:</label>
-                    <textarea name="user-message" id="form-message" placeholder="Insira sua mensagem" class="form-text" required></textarea>
-                    <span id="error-message"></span>
-                    <input type="submit" value="Enviar mensagem" class="anchor-button" id="contact-button">
-                </form>
+                <section id="contact-form">
+                    <label for="username" class="contact-label">Nome:</label>
+                    <input type="text" name="name" id="username" placeholder="Insira seu nome" class="form-text" required>
+                    <label for="user-email" class="contact-label">Email:</label>
+                    <input type="email" name="email" id="user-email" placeholder="Insira seu email" class="form-text" required>
+                    <label for="user-message" class="contact-label">Mensagem:</label>
+                    <textarea name="msg" id="user-message" placeholder="Insira sua mensagem" class="form-text" required></textarea>
+                    <span id="span-message"></span>
+                    <button class="anchor-button" id="contact-button" onclick="sendMail();">Enviar mensagem</button>
+                </section>
                 <div id="alternative-contact">
                     <h4 id="alternative-contact-title">Entre em contato comigo</h4>
                     <p class="alternative-contact-text">Se quiser saber mais sobre meu trabalho, por favor, mande uma mensagem. Serei grato em respondê-la.</p>
                     <div id="alternative-contact-items">
-                        <a href=""><img src="./src/images/linkedin.png" alt="Icone do LinkedIn" class="contact-icon"></a>
-                        <a href=""><img src="./src/images/whatsapp.png" alt="Icone do whatsapp" class="contact-icon"></a>
+                        <a href="https://www.linkedin.com/in/wesllen-ara%C3%BAjo-66327930a/" target="_blank"><img src="./src/images/linkedin.png" alt="Icone do LinkedIn" class="contact-icon"></a>
+                        <a href="https://wa.me/5587981483049" target="_blank"><img src="./src/images/whatsapp.png" alt="Icone do whatsapp" class="contact-icon"></a>
                     </div>
                 </div>
             </div>
@@ -153,6 +159,6 @@
     <footer>
         <p id="footer-text">Copyright &copy; 2024 Wesllen Araújo</p>
     </footer>
-    <script src="./src/js/Main.js"></script>
+    <script src="./src/js/SendMail.js"></script>
 </body>
 </html>

@@ -210,8 +210,7 @@ header h1 {
     flex-direction: column;
     row-gap: 1rem;
 }
-#error-message {
-    color: #dc0909;
+#span-message {
     overflow-wrap: break-word;
 }
 #alternative-contact {
@@ -229,7 +228,7 @@ header h1 {
 .form-text::placeholder {
     color: var(--quaternary-color);
 }
-#form-message {
+#user-message {
     height: 12rem;
     max-width: 530px;
     min-width: 530px;
